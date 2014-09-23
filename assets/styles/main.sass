@@ -1,0 +1,31 @@
+=WH($width, $height)
+    width: $width
+    height: $height
+        
+=fontConnect($font, $name:$font)
+    @font-face 
+        font-family: $font
+        src: local('#{$name}'), url('../fonts/#{$name}.eot?') format('eot'), url('../fonts/#{$name}.woff') format('woff'), url('../fonts/#{$name}.ttf') format('truetype'), url('../fonts/#{$name}.svg') format('svg')
+
+html
+    min-height: 1080px
+    min-width: 1000px
+        // For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#858585 , #e5e5e5)
+        // For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(#858585, #e5e5e5)
+        // For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(#858585, #e5e5e5) 
+        // Standard syntax */
+    background: linear-gradient(#858585 , #e5e5e5)
+        
+.wrap 
+    width: 1000px
+    margin: 0 auto
+    position: relative
+
++fontConnect(sansWeb, pt_sans-web-bold)
+        
+@import head
+@import content
+@import footer
