@@ -1,7 +1,18 @@
 extends ./layout
 
-
 block body
-    include header.jade
-    include content.jade
-    include footer.jade
+    header
+        .wrap
+            .logo
+                img(src="./images/logo.png", alt="")
+            .names
+                p|АВТОМАСТЕРСКАЯ
+                p|ООО "РАШИТ"
+                p
+                    span.for|Мы созданы для клиента
+
+            form
+                input.search(type="search" name="idSearch" placeholder="Найти")
+            nav.navigation(id="main-menu")
+    //include content.jade
+    //include footer.jade
