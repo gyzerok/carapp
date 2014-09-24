@@ -25,6 +25,19 @@ header
         position: relative
         width: 730px
         align-items: flex-end
+            
+        a
+            width: 100%
+            height: 100%
+            color: white
+            display: block
+            text-decoration: none
+            padding: 0 7px
+            &.active
+                background-color: #005796
+                
+            &:hover,&:active
+                background-color: #005796
         
     
     li
@@ -33,11 +46,10 @@ header
         width: 132px
         height: 40px
         text-align: center
-        
         padding: 0 7px
+        
         line-height: 40px
-        &:hover,&:active
-            background-color: #005796
+        
         
         
         text-decoration: none
@@ -47,8 +59,7 @@ header
         font-weight: bold
         font-family: sansWeb
 
-        &.active
-            background-color: #005796
+        
             
             
     .search

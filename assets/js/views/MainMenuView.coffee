@@ -8,7 +8,7 @@ define([
     tagName: 'ul'
 
     ui:
-      elems: 'li'
+      elems: 'a'
 
     events:
       'click @ui.elems': 'onMenuItemClicked'
