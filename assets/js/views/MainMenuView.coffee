@@ -1,11 +1,10 @@
 define([
     'marionette'
     'jquery'
-    'handlebars'
     'hbs!/templates/MainMenu'
-  ], (Marionette, $, Handlebars, tpl) ->
+  ], (Marionette, $, tpl) ->
   MainMenuView = Marionette.ItemView.extend(
-    template: tpl #Handlebars.compile(tpl)
+    template: tpl
     tagName: 'ul'
 
     ui:
@@ -16,7 +15,6 @@ define([
 
     onMenuItemClicked: (e) ->
       $(@.ui.elems).removeClass('active')
-      console.log(e.target)
       $(e.target).addClass('active')
   )
 

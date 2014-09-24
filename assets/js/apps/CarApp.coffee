@@ -1,11 +1,11 @@
 define([
-    'backbone',
-    'marionette',
+    'backbone'
+    'marionette'
     'MainMenuView'
   ], (Backbone, Marionette, MainMenuView) ->
   CarApp = new Marionette.Application(
     regions:
-      MainMenuRegion: '#main-menu'
+      MainMenuRegion: '#mainMenu'
   )
 
   CarApp.addInitializer () ->
