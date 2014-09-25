@@ -1,16 +1,16 @@
 define([
     'backbone'
     'marionette'
-    'MainMenuView'
-  ], (Backbone, Marionette, MainMenuView) ->
+    'MainLayoutView'
+  ], (Backbone, Marionette, MainLayoutView) ->
   CarApp = new Marionette.Application(
     regions:
-      MainMenuRegion: '#mainMenu'
+      BodyRegion: '#body'
   )
 
   CarApp.addInitializer () ->
-    mainMenu = new MainMenuView()
-    CarApp.MainMenuRegion.show(mainMenu)
+    layoutView = new MainLayoutView()
+    CarApp.BodyRegion.show(layoutView)
 
   CarApp.on('intialize:after', () ->
     if Backbone.history? then Backbone.history.start()

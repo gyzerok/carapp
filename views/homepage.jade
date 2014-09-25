@@ -1,29 +1,6 @@
 extends ./layout
 
 block body
-    header
-        .wrap
-            .logo
-                img(src="./images/logo.png", alt="")
-            .names
-                p|АВТОМАСТЕРСКАЯ
-                p|ООО "РАШИТ"
-                p
-                    span.for|Мы созданы для клиента
-
-            form
-                input.search(type="search" name="idSearch" placeholder="Найти")
-            nav.navigation#mainMenu
-                ul
-                    a(href='#')
-                        li.active|О компании
-                    a(href='#')
-                        li|Услуги
-                    a(href='#')
-                        li|Технологии
-                    a(href='#')
-                        li|Фотогалерея
-                    a(href='#')
-                        li|Контакты
-    //include content.jade
-    //include footer.jade
+    include header
+    include content.jade
+    include footer.jade

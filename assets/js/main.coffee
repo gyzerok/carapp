@@ -8,7 +8,7 @@ require.config(
     hbs: 'dependencies/hbs'
     handlebars: 'dependencies/handlebars'
     CarApp: 'apps/CarApp'
-    MainMenuView: 'views/MainMenuView'
+    MainLayoutView: 'views/MainLayoutView'
 )
 require(['CarApp'], (CarApp) ->
   CarApp.start()
