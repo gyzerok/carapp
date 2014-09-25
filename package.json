@@ -25,7 +25,8 @@
     "jade": "~1.7.0",
     "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-jade": "~0.12.0",
-    "coffee-script": "~1.8.0"
+    "coffee-script": "~1.8.0",
+    "bcrypt": "~0.8.0"
   },
   "scripts": {
     "start": "node app.js",
